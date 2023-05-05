@@ -1,0 +1,10 @@
+:root{
+    --color-prime:rgb(105, 20, 88);
+    --color-sec:#150980;
+    --shadow:0 0 10px rgb(13, 82, 13);
+    --main-font:3rem;
+    /* secondary font size */
+    --sf:2rem;
+    /* background color */
+    --bgl:rgb(214, 146, 195);
+}

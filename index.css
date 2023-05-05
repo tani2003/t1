@@ -1,0 +1,76 @@
+/* h1{
+    color: blueviolet;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+@import 'confling.css';
+*{
+    font-family: 'Dancing Script', cursive; 
+}
+h1{
+    color: var(--color-prime);
+    font-size: var(--main-font);
+    box-shadow: var(--shadow);
+}
+h2{
+    color: var(--color-sec);
+    font-size: var(--sf);
+}
+.container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 200px 300px;
+    gap: 1rem;
+
+}
+.container >div{
+    box-shadow: var(--shadow);
+
+
+}
+.container >div:nth-child(odd){
+    color: rgb(21, 28, 31);
+    background-color: var(--bgl);
+    border-radius: 0 20px;
+}
+.nested{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.5rem;
+
+}
+.nested div{
+
+    background-color: chartreuse;
+    color: darkblue;
+    border: solid 1px darkgreen; 
+    text-align: center;
+
+
+}
+@media (max-width:900px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* we can use multipple class to edit like..how i want to */
+}
+
+
+/* ------keyframe----- */
+.nested div{
+    animation: vutu 2s ease-in-out 0s;
+}
+@keyframe vutu{
+    from{
+        height:0%;
+    }
+    to{
+        height:100%
+    }
+}
